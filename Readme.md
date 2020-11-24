@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Даурен Куркенов](https://up.htmlacademy.ru/adaptive/21/user/1479755).
-* Наставник: `1111`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/id8589).
 
 ---
 
