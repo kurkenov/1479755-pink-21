@@ -1,12 +1,160 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html class="page" lang="ru">
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<body class="page-body">
+    <div class="page-header">
+        <a class="page-header__logo">
+            <img src="img/pink.svg" width="74" height="23" alt="HTML Academy: Пинк">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toogle-button" type="button"><span class="vissualy-hidden">Открыть меню</span></button>
+            <div class="main-nav_list">
+                <ul class="main-nav_list site-list">
+                    <li class="site-list__item site-list__item-active">
+                        <a href="#" class="uppercase">Главная</a>
+                    </li>
+                    <li class="site-list__item site-list__item-active">
+                        <a href="#" class="uppercase">Фотографии</a>
+                    </li>
+                    <li class="site-list__item site-list__item-active">
+                        <a href="#" class="uppercase">Конкурс</a>
+                    </li>
+                    <li class="site-list__item site-list__item-active">
+                        <a href="#" class="uppercase">Html Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-  </body>
+    <main class="page-main">
+        <h1 class="vissualy-hidden">PINK основной блок</h1>
+
+        <section class="app-information">
+            <div class="app-information_wrapper">
+                <h2 class="vissualy-hidden"> Информация о приложении PINK</h2>
+                <p class="app-information__slogan">Взгляните на жизнь<br>иначе!</p>
+
+                <button class="app-information__download-button" type="button">Cкачать приложение</button>
+                <ul class="app-information__list">
+                    <li class="app-information__item ios"><img src="./img/apple-logo.svg" width="47" height="50" alt="Скачать для ios"></li>
+                    <li class="app-information__item android"><img src="./img/android-logo.svg" width="43" height="47" alt="Скачать для Android"></li>
+                    <li class="app-information__item windows"><img src="./img/microsoft-logo.svg" width="44" height="41" alt="Скачать для Windows Mobile"></li>
+                </ul>
+
+                <p class="app-information__desc">
+                    Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
+                </p>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="advantages__wrapper">
+                <h2 class="vissualy-hidden">Преимущества</h2>
+                <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+                <p class="advantages__slogan2">Нам есть, что вам предложить!</p>
+                <ul class="advantages__list">
+                    <li class="advantages__item advantages__item--feeling">
+                        <img class="advantages__img" src="img/iphone3.png" alt="Поднимает настроение">
+                        <h3 class="advantages__title">Поднимает настроение</h3>
+                        <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    </li>
+
+                    <li class="advantages__item advantages__item--world">
+                        <img class="advantages__img" src="img/iphone3.png" alt="Меняет мир вокруг">
+                        <h3 class="advantages__title">Меняет мир вокруг</h3>
+                        <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </li>
+
+                    <li class="advantages__item advantages__item--friends">
+                        <img class="advantages__img" src="img/iphone3.png" alt="Заводит новых друзей">
+                        <h3 class="advantages__title">Заводит новых друзей</h3>
+                        <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__wrapper">
+                <h2 class="vissualy-hidden">Отзывы клиентов</h2>
+                <img class="review__logo" src="./img/quotes.svg" alt="Отзывы клиентов">
+                <div class="reviews__list slider">
+                    <blockquote class="reviews__item slider-item">
+                        <p class="reviews__author-name">Николай Петров</p>
+                        <p class="reviews__author-age-jobtitle">25 лет, водитель трамвая</p>
+                        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </blockquote>
+                    <blockquote class="reviews__item slider-item">
+                        <p class="reviews__author-name"></p>
+                        <p class="reviews__author-age-jobtitle"></p>
+                        <p class="reviews__text"></p>
+                    </blockquote>
+                    <blockquote class="reviews__item slider-item">
+                        <p class="reviews__author-name"></p>
+                        <p class="reviews__author-age-jobtitle"></p>
+                        <p class="reviews__text"></p>
+                    </blockquote>
+                </div>
+                <button class="reviews__prev" type="button"> Предыдущий отзыв</button>
+                <button class="reviews__next" type="button"> Cледующий отзыв</button>
+                <p class="reviews__toogles slider__toogles">
+                    <button class="slider__toogle slider__toogle--current" type="button">1</button>
+                    <button class="slider__toogle" type="button">2</button>
+                    <button class="slider__toogle" type="button">3</button>
+                </p>
+            </div>
+        </section>
+
+        <section class="pricelist">
+            <!-- не понял как сделать прайс лист через table или ul-->
+            <div class="pricelist__wrapper">
+                <h2 class="vissualy-hidden">Тарифы</h2>
+                <ul class="pricelist__list">
+                    <li class="pricelist__item slider-item"> </li>
+                </ul>
+                <p class="feedback__toogles slider__toogles">
+                    <button class="slider__toogle" type="button">1</button>
+                    <button class="slider__toogle slider__toogle--current" type="button">2</button>
+                    <button class="slider__toogle" type="button">3</button>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__contacts contacts">
+                <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <p class="contacts__item-title">Звоните:</p>
+                        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+                    </li>
+                    <li class="contacts__item">
+                        <p class="contacts__item-email">Пишите:</p>
+                        <a class="contacts__phone" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+            <div class="page-footer__map"></div>
+            <div class="page-footer__logo"></div>
+            <div class="page-footer__social"></div>
+            <div class="page-footer__copyright"></div>
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+
 </html>
