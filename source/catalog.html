@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page-body">
+    <div class="page-header">
+        <a href=index.html class="page-header__logo">
+            <img src="img/pink.svg" width="74" height="23" alt="HTML Academy: Пинк">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toogle-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__container">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item ">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item site-list__item-active ">
+                        <a>Фотографии</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="form.html">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="https://up.htmlacademy.ru/adaptive/21" class="uppercase">Html Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <p class="page-header__slogan">Фотографии пользователей</p>
+    </div>
+    <main>
+        <section class="top-of-the-day">
+            <!--Не знал как связать гадерею и img контейнер-->
+            <h2 class="visually-hidden">Панорама дня</h2>
+            <div class="image-container">
+                <img class="image-container__img top-of-the-day__img" src="https://via.placeholder.com/150x150">
+                <p class="image-container__author">Анна <span class="image-container__datastamp">(5 часов назад)</span></p>
+                <p class="image-container__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="image-container__like-button" type="button"></button>
+                <p class="image-container__like-header">Нравится:<span class="image-container__like-value">356</span></p>
+            </div>
+        </section>
+        <section class="gallery">
+            <!--Не знал как связать гадерею и img контейнер-->
+            <h2 class="visually-hidden">Фото галерея</h2>
+            <div class="image-container">
+                <img class="image-container__img image-container__img-top" src="https://via.placeholder.com/150x150">
+                <p class="image-container__author">Левон<span class="image-container__datastamp">(5 часов назад)</span></p>
+                <p class="image-container__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="image-container__like-button" type="button"></button>
+                <p class="image-container__like-header">Нравится:<span class="image-container__like-value">356</span></p>
+            </div>
+            <div class="image-container">
+                <img class="image-container__img image-container__img-top" src="https://via.placeholder.com/150x150">
+                <p class="image-container__author">Антон<span class="image-container__datastamp">(12 часов назад)</span></p>
+                <p class="image-container__description">Соседи будут рады!</p>
+                <button class="image-container__like-button" type="button"></button>
+                <p class="image-container__like-header">Нравится:<span class="image-container__like-value">66</span></p>
+            </div>
+            <div class="image-container">
+                <img class="image-container__img image-container__img-top" src="https://via.placeholder.com/150x150">
+                <p class="image-container__author">Борис<span class="image-container__datastamp">(20 часов назад)</span></p>
+                <p class="image-container__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <button class="image-container__like-button" type="button"></button>
+                <p class="image-container__like-header">Нравится:<span class="image-container__like-value">215</span></p>
+            </div>
+            <div class="image-container">
+                <img class="image-container__img image-container__img-top" src="https://via.placeholder.com/150x150">
+                <p class="image-container__author">Сергей<span class="image-container__datastamp">(25 часов назад)</span></p>
+                <p class="image-container__description">Самая кубанская в мире!</p>
+                <button class="image-container__like-button" type="button"></button>
+                <p class="image-container__like-header">Нравится:<span class="image-container__like-value">4</span></p>
+            </div>
+            <div class="image-container">
+                <img class="image-container__img image-container__img-top" src="https://via.placeholder.com/150x150">
+                <p class="image-container__author">Максим<span class="image-container__datastamp">(40 часов назад)</span></p>
+                <p class="image-container__description">Где снег-то?</p>
+                <button class="image-container__like-button" type="button"></button>
+                <p class="image-container__like-header">Нравится:<span class="image-container__like-value">150</span></p>
+            </div>
+            <div class="image-container">
+                <img class="image-container__img image-container__img-top" src="https://via.placeholder.com/150x150">
+                <p class="image-container__author">Надежда<span class="image-container__datastamp">(45 часов назад)</span></p>
+                <p class="image-container__description">Всем GM и взаимные лайки!</p>
+                <button class="image-container__like-button" type="button"></button>
+                <p class="image-container__like-header">Нравится:<span class="image-container__like-value">2560</span></p>
+            </div>
+
+        </section>
+        <section class="form-img-editor">
+            <h2 class="visually-hidden">Форма редактированя изображения</h2>
+            <div class="form-img-editor__wrapper">
+                <img class="form-img-editor__upload-img" src="https://via.placeholder.com/150x150">
+                <button class="form-img-editor__crop-button" type="button"></button>
+                <button class="form-img-editor__fill-button" type="button"></button>
+                <button class="form-img-editor__contrast-button" type="button"></button>
+                <button class="form-img-editor__submit-button" type="submit">Запостить</button>
+                <button class="form-img-editor__submit-button" type="reset">Отмена</button>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <footer class="page-footer ">
+        <div class="page-footer__wrapper ">
+            <section class="contacts ">
+                <h2 class="visually-hidden ">Контакты</h2>
+                <div class="page-footer__contacts contacts ">
+                    <p class="contacts__title ">Остались вопросы?<br>Свяжитесь с нами!</p>
+                    <dl class="contacts__list ">
+                        <div class="contacts__container ">
+                            <dt class="contacts__item-title ">Звоните:</dt>
+                            <dd class="contacts__phone "><a href="tel:+78125556666 ">+7 (812) 555-66-66</a></dd>
+                        </div>
+                        <div class="contacts__container ">
+                            <dt class="contacts__item-email ">Пишите:</dt>
+                            <dd class="contacts__email "><a href="mailto:mail@htmlacademy.ru ">mail@htmlacademy.ru</a></dd>
+                        </div>
+                        <div class="contacts__container ">
+                            <dt class="contacts__item-adress ">Приезжайте в гости:</dt>
+                            <dd class="contacts__adress "><a href="# ">ул. Большая Конюшенная, 19/8</a></dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+            <section class="map ">
+                <h2 class="visually-hidden ">Карта</h2>
+                <div class="page-footer__map ">
+                    <img class="page-footer__map-header " src="img/triangle-white-footer.svg " alt="Белый треугольник для карты ">
+                    <img class="page-footer__map-image " src="img/map.png " alt="Карта ">
+                </div>
+            </section>
+            <section class="social-links ">
+                <h2 class="visually-hidden ">Ссылки на социальные сети и сайт</h2>
+                <div class="page-footer__logo "></div>
+                <div class="page-footer__social ">
+                    <ul>
+                        <li>
+                            <a href="# " class="social-button ">
+                                <span class="visually-hidden ">Вконтакте</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# " class="social-button ">
+                                <span class="visually-hidden ">Фейсбук</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# " class="social-button ">
+                                <span class="visually-hidden ">Инстаграм</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__copyright "></div>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
