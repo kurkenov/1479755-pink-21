@@ -8,7 +8,7 @@
 
 <body class="page-body">
     <div class="page-header">
-        <a class="page-header__logo">
+        <a href=index.html class="page-header__logo">
             <img src="img/pink.svg" width="74" height="23" alt="HTML Academy: Пинк">
         </a>
         <nav class="main-nav">
@@ -16,13 +16,13 @@
             <div class="main-nav__container">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item ">
-                        <p>Главная</p>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="site-list__item ">
                         <a href="catalog.html">Фотографии</a>
                     </li>
                     <li class="site-list__item site-list__item-active">
-                        <a href="form.html">Конкурс</a>
+                        <a>Конкурс</a>
                     </li>
                     <li class="site-list__item">
                         <a href="https://up.htmlacademy.ru/adaptive/21" class="uppercase">Html Academy</a>
@@ -32,40 +32,49 @@
         </nav>
         <p class="page-header__slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
     </div>
-    <main class="form">
-
-        <p class="form-slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    <main class="form-main">
+        <p class="form-main__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <section class="form">
             <h2 class="visually-hidden">Форма</h2>
-            <div class="form-wrapper">
+            <div class="form-main__wrapper">
                 <form action="#" method="get">
-                    <div class="form-personal-details">
-                        <p><input type="text" name="lastname" value="Укажите фамилию *"></p>
-                        <p><input type="text" name="firstname" value="Введите ваше имя *"></p>
-                        <p><input type="text" name="secondname" value="Ну и отчество тоже"></p>
+                    <div class="form-main__details">
+                        <label>Фамилия:
+              <input type="text" name="lastname" value="Укажите фамилию *">
+            </label>
+                        <label>Имя:
+              <input type="text" name="firstname" value="Введите ваше имя *">
+            </label>
+                        <label>Отчество:
+              <input type="text" name="secondname" value="Ну и отчество тоже">
+            </label>
                     </div>
-                    <div class="form-appused">
-                        <p class="form-appused__header">С каким приложением путешествовали?</p>
+                    <div class="form-main-group-list-appused">
+                        <p class="form-main-group-list-appused__header">С каким приложением путешествовали?</p>
                         <p><input type="radio" name="app-used" value="pink-ios" checked>Pink для iOS</p>
                         <p><input type="radio" name="app-used" value="pink-android">Pink на Android</p>
                         <p><input type="radio" name="app-used" value="windows-phone">Windows Phone</p>
                     </div>
-                    <div class="form-travel-results">
-                        <p class="form-travel-results__header">Ваши безбашенные достижения в путешествии</p>
-                        <p><input type="checkbox" name="shark-photo" value="yes" checked>Сделал селфи с акулой</p>
-                        <p><input type="checkbox" name="sunburn" value="yes" checked>Обгорел на пляже</p>
-                        <p><input type="checkbox" name="saw-chacknoris" value="yes">Видел Чака Норриса</p>
-                        <p><input type="checkbox" name="bought- souvenirs" value="yes">Накупил сувениров</p>
-                        <p><input type="checkbox" name="hold-tower" value="yes" checked>Удержал башню</p>
-                        <p><input type="checkbox" name="destrpid-hotel" value="yes">Разгромил отель</p>
+                    <div class="form-main-group-list-results">
+                        <p class="form-main-group-list-results__header">Ваши безбашенные достижения в путешествии</p>
+                        <p><input type="checkbox" name="shark-photo" checked>Сделал селфи с акулой</p>
+                        <p><input type="checkbox" name="sunburn" checked>Обгорел на пляже</p>
+                        <p><input type="checkbox" name="saw-chacknoris">Видел Чака Норриса</p>
+                        <p><input type="checkbox" name="bought- souvenirs">Накупил сувениров</p>
+                        <p><input type="checkbox" name="hold-tower" checked>Удержал башню</p>
+                        <p><input type="checkbox" name="destrpid-hotel">Разгромил отель</p>
                     </div>
-                    <div class="form-contact-details">
-                        <p><input name="tel" value="Номер, пожалуйста" type="tel"></p>
-                        <p><input name="email" value="Введите почту *" type="email"></p>
+                    <div class="form-main-contact-details">
+                        <label>Номера телефона:
+              <input name="tel" value="Номер, пожалуйста" type="tel">
+            </label>
+                        <label>Адрес почты:
+              <input name="email" value="Введите почту *" type="email">
+            </label>
                     </div>
-                    <div class="form-review">
-                        <p class="form-review__header">С каким приложением путешествовали?</p>
-                        <textarea name="text">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    <div class="form-main-user-message">
+                        <p class="form-main-user-message__header">С каким приложением путешествовали?</p>
+                        <textarea class="form-main-user-message__text" name="user-message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                     </div>
                     <div class="form-submit">
                         <button type="submit">Отправить форму</button>
@@ -74,21 +83,20 @@
                 </form>
             </div>
         </section>
-        <!-- Всплывающие окна необходимо делать отдельными формами?-->
         <div class="popup">
             <h2 class="visually-hidden">Вспылвающее окна</h2>
             <div class="popup-success">
                 <h3 class="visually-hidden">Вспылвающее окно успешно</h3>
                 <p class="popup-success__title">Ваша заявка отправлена</p>
                 <p class="popup-success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-                <button class="popup-success__button" type="submit">ЗАКРЫТЬ ОКНО</button>
+                <button class="popup-success__button" type="button">ЗАКРЫТЬ ОКНО</button>
             </div>
 
             <div class="popup-error">
                 <h3 class="visually-hidden ">Вспылвающее окно ошибка</h3>
                 <p class="popup-error__title ">Что-то пошло не так!</p>
                 <p class="popup-error__text ">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-                <button class="popup-success__button" type="submit">ОК</button>
+                <button class="popup-error__button" type="button">ОК</button>
             </div>
 
         </div>
